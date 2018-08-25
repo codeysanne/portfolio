@@ -25,24 +25,39 @@ gulp.task('watch', function() {
         browserSync.reload();
     });
 
-    watch('./src/scss/**/*.scss', function() { /* watches file specified for changes */
-        // gulp.start('styles');
-        gulp.start('cssInject');
-    });
+    // watch('./src/scss/**/*.scss', function() { /* watches file specified for changes */
+    //     // gulp.start('styles');
+    //     gulp.start('cssInject');
+    // });
 
-    watch('./src/js/**/*.js', function() { /* watches file specified for changes */
-        gulp.start('scriptsRefresh');
-    });
+    // watch('./src/scss/**/*.scss', function() { /* watches file specified for changes */
+    watch('./src/scss/**/*.scss', gulp.series('sass', 'cssInject'));
+
+    // watch('./src/js/**/*.js', gulp.series('scripts', 'scriptsRefresh'));
+    watch('./src/js/**/*.js', gulp.series('js', 'scriptsRefresh'));
 
 });
 
-gulp.task('cssInject', ['sass'], function() { /* update browserSync after css files finished compiling */
-    return gulp.src('./src/temp/css/app.css') 
-        .pipe(browserSync.stream());
+gulp.task('preview', function() {
+
+    browserSync.init({ /* configurations for browserSync */
+        notify: false, /* removes notifications in upper right corner */
+        server: {
+            baseDir: 'src' /* what folder to show in browser */
+        }
+    });
 });
 
-gulp.task('scriptsRefresh', ['scripts'], function() { /* update browserSync after js files finished compiling */
+// gulp.task('cssInject', ['sass'], function() { /* update browserSync after css files finished compiling */
+gulp.task('cssInject', function() { /* update browserSync after css files finished compiling */
+    // return gulp.src('./src/temp/css/app.css') 
+    //     .pipe(browserSync.stream());
     browserSync.reload();
 });
 
-gulp.task('default', ['watch']);
+// gulp.task('scriptsRefresh', ['scripts'], function() { /* update browserSync after js files finished compiling */
+gulp.task('scriptsRefresh', function() { /* update browserSync after js files finished compiling */
+    browserSync.reload();
+});
+
+gulp.task('default', gulp.series('watch'));

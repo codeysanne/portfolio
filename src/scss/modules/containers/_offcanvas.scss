@@ -1,0 +1,60 @@
+.off-canvas {
+    // background-color: $primary3;
+    // background-image: linear-gradient(to bottom, $primary3, $primary, $primary3);
+    // background-image: linear-gradient(to bottom, $primary2, $primary1, $primary2);
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    a {
+        // @extend .h4;
+        // color:$medium-gray;
+        color:$light-black;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .icon {
+        display: inline-block;
+        // transform: scale(0.5);
+        height: 20px;
+        margin-right: 20px;
+    }
+    .logo {
+        // color:$purple500!important;
+        margin-bottom: 30vh;
+        margin-bottom: 0;
+    }
+    .menu-item {
+        padding-left: 0;
+        padding-right: 0;
+        color:rgba(255,255,255,0.7);
+        color:$purple500;
+        color:$purple700;
+        color:$purple900;
+        color:$purple300;
+        color:$purple100;
+        transition: 300ms color ease-in;
+    }
+    &__inner {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .close-button {
+        padding-left: 18.55px;
+        padding-right: 18.55px;
+        background-color: $purple900;
+        color: $purple300;
+        overflow: hidden;
+        span {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .is-current-link {
+        color:$secondary;
+    }
+}

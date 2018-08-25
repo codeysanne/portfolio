@@ -1,4 +1,27 @@
 @import 'foundation-modules';
 
+@import 'base/global-vars';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/colors';
+
 @import 'modules/test';
 @import 'modules/sprite';
+@import 'modules/heading';
+@import 'modules/section-text';
+@import 'modules/background';
+@import 'modules/button';
+@import 'modules/logo';
+
+@import 'modules/containers/wrapper';
+@import 'modules/containers/header';
+@import 'modules/containers/footer';
+@import 'modules/containers/section';
+@import 'modules/containers/offcanvas';
+@import 'modules/containers/accordion';
+
+@import 'modules/containers/sections/hero';
+@import 'modules/containers/sections/services';
+@import 'modules/containers/sections/work';
+@import 'modules/containers/sections/about';
+@import 'modules/containers/sections/contact';

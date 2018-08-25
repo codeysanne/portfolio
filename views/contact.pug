@@ -1,0 +1,21 @@
+extends index
+
+
+block contact
+    .contact.section.section--extra-b-padding#contact
+        .wrapper
+            .heading
+                span.heading__sub.heading--uppercase Contact Section
+                h2.heading__main.heading__main--light Like what you see, get in touch!
+                h3.heading__lead.heading__lead--dark Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia!
+            form(action="")
+                input(type="text" name="name" id="name" placeholder="First and last name")
+                input(type="email" name="email" id="email" placeholder="Your Email")
+                textarea(placeholder="Your message")
+                .grid-x.align-justify
+                    button.large.button.medium-down-expanded(type="submit") Send Message
+                    .social-media
+                        a(href="mailto:artisanclickinfo@gamil.com") #[span.fa.fa-envelope]
+                        a(href="https://www.twitter.com/artisanclick") #[span.fa.fa-twitter]
+                        a(href="https://www.codepen.io/artisanclick") #[span.fa.fa-codepen]
+                        a(href="https://github.com/artisanclick") #[span.fa.fa-github-alt]

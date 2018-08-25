@@ -1,143 +1,27 @@
-.flexbox #test1 {
-    background-color: green;
-}
-.no-flexbox #test1 {
-    background-color: red;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-#container1 {
-    &-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
+html {
+    font-kerning: normal;
+    font-size:100%;
+    @include breakpoint(medium) {
+        font-size:118.75%;
     }
-    &-y {
-        // border: 1px solid $secondary-color;
-        // height: 800px;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
+    @include breakpoint(large) {
+        // font-size:1.375rem;
+        font-size:137.5%;
+        // font-size:22px;
     }
-    &b-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
+    .mark {
+        background-color: red;
     }
-    &b-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
+    .full-width-text {
+        @include breakpoint(medium) {
+            font-size: 1.5em;
         }
     }
 }
-
-#container2 {
-    &-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
+.no-svg {
+    .hero {
+        &:before {
+            background-image: url('../../../../src/assets/images/architecture7png.png');
         }
     }
-    &-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
-    }
-}
-
-
-#container3 {
-    &-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
-    }
-    &-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
-    }
-    &b-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
-    }
-    &b-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
-    }
-}
-
-#container4 {
-    &-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
-    }
-    &-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
-    }
-}
-
-#container5 {
-    &-x {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $primary-color;
-        }
-    }
-    &-y {
-        // border: 1px solid $secondary-color;
-        background-color: transparentize($color: $secondary-color, $amount: 0.7);
-        margin-bottom: 2rem;
-        .cell {
-            border: 1px solid $success-color;
-        }
-    }
-}
-
-.container5-y-inner {
-    border-width: 0!important;
 }

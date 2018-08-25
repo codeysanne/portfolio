@@ -1,0 +1,37 @@
+// @include xy-base-grid-classes;
+// @include foundation-xy-grid-classes;
+
+.wrapper {
+    @extend .grid-container;
+    // border: 1px dashed rgba(0,0,0,0.1);
+    overflow-y: hidden; // for bottom margins caused by block elements (headings, paragraphs)
+    // @include %grid-container;
+    // &--x-center {
+    //     width: 100%;
+    //     text-align: center;
+    // }
+    @include breakpoint(medium only) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    position: relative; 
+    &--fill-height {
+        height: 100%;
+    }
+    &--no-overflow {
+        overflow: hidden;
+    }
+    &--no-x-padding {
+        @include breakpoint(large) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &--y-padding-small {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    &--small-margin {
+        // margin-left: ;
+    }
+}

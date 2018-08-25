@@ -1,0 +1,73 @@
+.heading {
+    &--h1 {
+        @extend .h1;
+    }
+    &--h2 {
+        @extend .h2;
+    }
+    &--h3 {
+        @extend .h3;
+    }
+    &--h4 {
+        @extend .h4;
+    }
+    &--h5 {
+        @extend .h5;
+    }
+    &--h6 {
+        @extend .h6;
+    }
+    &__icon {
+        margin-bottom: 0.75em;
+    }
+    &__sub {
+        display: block;
+        color: $subHeadingColor;
+        font-family: $bodyFont, sans-serif;
+        font-weight: 400;
+        // margin-bottom: 0.75em;
+    }
+    &__main {
+        color: $headingColor;
+        line-height: 1.4em;
+        margin-bottom: 0.75em;
+        // margin-bottom: 1.25em;
+        font-weight: 900;
+        &--light {
+            color: #ebebeb;
+        }
+        &--extra-margin {
+            margin-bottom: 1.75em;
+        }
+    }
+    &__lead {
+        // margin-bot1tom: 40px;
+        margin-bottom: 0.75em;
+        font-family: $bodyFont, sans-serif;
+        color: $leadColor;
+        // color: $dark-gray;
+        font-weight: 300;
+        // font-size: 1.75rem;
+        font-style: italic;
+        line-height: 1.5em;
+        &--light {
+            // color: #ebebeb;
+            color: $purple200;
+        }
+        &--pink {
+            // color: $secondary3;
+        }
+        &--blue {
+            // color: lighten($secondary1, 15%);
+        }
+        &--dark {
+            color: rgba(0,0,0,0.5);
+        }
+    }
+    &--uppercase {
+        text-transform: uppercase
+    }
+    &--shadow {
+        text-shadow: -1px 1px 1px rgba(0,0,0,0.7);
+    }
+}

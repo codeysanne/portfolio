@@ -4,349 +4,527 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    
+    <title>Artisan Click</title>
+    <meta name="keywords" content="Front end developer, frontend developer, Angular developer, WordPress developer, web developer">
+    <meta name="description" content="Front End Developer">
+
     <!-- build:css assets/styles/app.css -->
     <link rel="stylesheet" href="temp/css/app.css">
     <!-- endbuild -->
-    
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <!-- build:js assets/scripts/vendor.js -->
     <script src="temp/js/vendor.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-    <h1>Grid Container</h1>
-    <div class="grid-container" id="container1-x">
-      <!-- <div class="grid-x grid-margin-x grid-margin-y grid-padding-x"> -->
-      <div class="grid-x grid-margin-x grid-margin-y grid-padding-x large-margin-collapse">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell auto">hello</div>
-      </div>
-    </div>
-    
-    <div class="grid-container" id="container1-y">
-      <!-- <div class="grid-y grid-margin-x grid-margin-y grid-padding-x"> -->
-      <div class="grid-y grid-margin-x grid-margin-y grid-padding-x grid-frame">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      </div> 
-    </div>
-    
-    <h1>Grid Container (one wrapper div)</h1>
-    <div class="grid-container grid-x grid-margin-x grid-margin-y grid-padding-x" id="container1b-x">
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-    </div>
-    
-    <div class="grid-container grid-y grid-margin-x grid-margin-y grid-padding-x grid-frame" id="container1b-y">
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-    </div>
-
-    <h1>Grid Container Fluid</h1>
-    <div class="grid-container fluid" id="container2-x">
-      <div class="grid-x grid-margin-x grid-margin-y grid-padding-x">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      </div>
-    </div>
-
-    <div class="grid-container fluid" id="container2-y">
-      <div class="grid-y grid-margin-x grid-margin-y grid-padding-x grid-frame">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      </div> 
-    </div>
-    
-    <h1>Grid Container Full</h1>
-    <div class="grid-container full" id="container3-x">
-      <div class="grid-x grid-margin-x grid-margin-y grid-padding-x">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      </div>
-    </div>
-
-    <div class="grid-container full" id="container3-y">
-      <div class="grid-y grid-margin-x grid-margin-y grid-padding-x grid-frame">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      </div> 
-    </div>
-    
-    <h1>Grid Container Full (one wrapper div)</h1>
-    <div class="grid-container full grid-x grid-margin-x grid-margin-y grid-padding-x" id="container3b-x">
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-        <div class="cell medium-6 large-4 xlarge-3">hello</div>
-    </div>
-
-    <div class="grid-container full grid-y grid-margin-x grid-margin-y grid-padding-x grid-frame" id="container3b-y">
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-      <div class="cell medium-6 large-4 xlarge-3">hello</div>
-    </div>
-
-    <h1>Block Grid Container</h1>
-    <h2>grid-x</h2>
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x grid-margin-y grid-padding-x medium-up-2 large-up-3 xlarge-up-4" id="container4-x">
-          <div class="cell">hello</div>
-          <div class="cell">hello</div>
-          <div class="cell">hello</div>
-          <div class="cell">hello</div>
-      </div>
-    </div>
-
-    <h2>grid-y 1</h2>
-    <div class="grid-container">
-      <div class="grid-y grid-margin-x grid-padding-x grid-frame medium-up-2 large-up-3 xlarge-up-4" id="container4-y">
-        <!-- <div class="cell grid-y grid-frame"> -->
-        <div class="cell grid-y" style="height:100vh">
-          <div class="cell medium-6 large-4">hello</div>
-          <div class="cell medium-6 large-4">hello</div>
-          <div class="cell medium-6 large-4">hello</div>
-        </div>
-        <div class="cell grid-y" style="height:100vh">
-          <div class="cell medium-6 large-4">hello</div>
-          <div class="cell medium-6 large-4">hello</div>
-          <div class="cell medium-6 large-4">hello</div>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <!-- Your menu or Off-canvas content goes here -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="off-canvas__inner">
+          <div class="logo logo--small">
+            Artisan <span class="large accented">Click</span>
+          </div>
+          <ul class="vertical menu" data-smooth-scroll>
+            <li><a class="menu-item" href="#skills"><span class="icon icon--700--section-tools"></span>Skills</a></li>
+            <li><a class="menu-item" href="#work"><span class="icon icon--700--section-briefcase"></span>Portfolio</a></li>
+            <li><a class="menu-item" href="#about"><span class="icon icon--700--section-user3"></span>About</a></li>
+            <li><a class="menu-item" href="#contact"><span class="icon icon--700--section-telephone"></span>Contact</a></li>        
+          </ul>
         </div>
       </div>
-    </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Your page content lives here -->
+        <header class="header" data-sticky-container>
+          <div class="sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+            <!-- Mobile only -->
+            <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+              <!-- <div class="menu-icon-wrapper"> -->
+                <button class="menu-icon" type="button" data-open="offCanvas"></button>
+              <!-- </div> -->
+            </div><!-- end of title-bar -->
+        
+            <div class="wrapper wrapper--no-x-padding">
+              <div class="top-bar" id="main-menu">
+                <ul class="vertical medium-horizontal menu" data-smooth-scroll data-offset="80">
+                  <li class="show-for-medium"><a class="menu-text" href="#hero">Artisan Click</a></li>
+                  <li><a class="menu-item" href="#skills">Skills</a></li>
+                  <li><a class="menu-item" href="#work">Portfolio</a></li>
+                  <li><a class="menu-item" href="#about">About</a></li>
+                  <li><a class="menu-item" href="#contact">Contact</a></li>        
+                </ul>
+              </div><!-- end of .top-bar -->
+            </div><!-- end of .wrapper -->
+          </div><!-- end of .sticky -->
+        </header><!-- end of data-sticky-container -->
 
-    <h2>grid-y 2</h2>
-    <div class="grid-container">
-        <!-- <div class="grid-x grid-padding-x medium-up-2 large-up-3 xlarge-up-4" id="container4-y"> -->
-        <!-- <div class="grid-x grid-padding-x grid-frame" id="container4-y"> -->
-        <div class="grid-x" id="container5-y" style="height:100vh">
-          <div class="cell medium-6 large-4 xlarge-3 container5-y-inner">
-            <!-- <div class="grid-y grid-margin-y grid-frame"> -->
-            <div class="grid-y grid-frame">
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
+        <div class="hero" id="hero">
+          <!-- <div class="hero_image" data-interchange="[],[],[]"></div> -->
+          <!-- <div class="hero_text-content"> -->
+            <div class="wrapper wrapper--fill-height wrapper---no-overflow">
+              <div class="hero__text-content">
+                <h1 class="logo">
+                  Artisan <span class="large accented">Click</span>
+                </h1>
+                <h2 class="hero__subtitle">I develop stylish responsive sites and apps</h2>
+                <!-- <p class="hero__description">hi</p> -->
+                <a href="#contact" class="button">Get in touch</a>
               </div>
             </div>
-          </div>
-          <div class="cell medium-6 large-4 xlarge-3 container5-y-inner">
-            <!-- <div class="grid-y grid-margin-y grid-frame"> -->
-            <div class="grid-y grid-frame">
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-            </div>
-          </div>
-          <div class="cell auto container5-y-inner">
-            <!-- <div class="grid-y grid-margin-y grid-frame"> -->
-            <div class="grid-y grid-frame">
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-              <div class="cell medium-6 large-4 xlarge-3">
-                hi
-              </div>
-            </div>
-          </div>
-          <!-- <div class="cell grid-y grid-frame">
-            <div class="cell medium-6 large-4">hello</div>
-            <div class="cell medium-6 large-4">hello</div>
-            <div class="cell medium-6 large-4">hello</div>
-          </div>
-          <div class="cell grid-y grid-frame">
-            <div class="cell medium-6 large-4">hello</div>
-            <div class="cell medium-6 large-4">hello</div>
-            <div class="cell medium-6 large-4">hello</div>
-          </div> -->
-      </div>
-
-      <!-- <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-          <div class="large-12 cell" id="test1">
-            <h1>Welcome to Foundation</h1>
-          </div>
+          <!-- </div> -->
         </div>
-  
-        <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
-            <div class="callout">
-              <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-              <div class="icon icon--wifi"></div>
-              <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-              <p>Once you've exhausted the fun in this document, you should check out:</p>
-              <div class="grid-x grid-padding-x">
-                <div class="large-4 medium-4 cell">
-                  <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+    
+        <div class="services section" id="skills">
+          <div class="wrapper">
+            <!-- <div class="grid-x">
+              <div class="cell color1">1</div>
+              <div class="cell color2">2</div>
+              <div class="cell color3">3</div>
+              <div class="cell color4">4</div>
+              <div class="cell color5">5</div>
+              <div class="cell"><img src="assets/images/purples.png" alt="naah"></div>
+            </div> -->
+            <div class="heading">
+              <!-- <span class="heading__icon icon icon--alt--section-tools"></span> -->
+              <span class="heading__sub heading--uppercase">Skills Section</span>
+              <h2 class="heading__main">Developing and designing know-how</h2>
+              <!-- <h3 class="heading__lead heading__lead--pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia!</h3> -->
+            </div>
+            <!-- <p style="font-size:20px">When setting a body copy, text is suggested <span style="color:red">t</span>o be kept between 45 to 75 ch<span style="color:red">a</span>racters per line for readability. Overly long lines make scanning the text more difficult, as the eye has farther to travel; readers reaching the end of one line may have trouble locating the start of the next line. The challenge is to find the most comfortable measure for an uninterrupted reading experience. Text size at 100% or 16px usually works well on a small screen (with the width of 340px or less). On a large screen, however, you need to put a limit on the line length.</p> -->
+            <div class="skill-card-group grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y medium-up-2">
+              <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-branding-design"></span>
+                <h4 class="skill-card__title">Input</h4>
+                <p class="skill-card__text">
+                  <span style="background-color:red"></span>Angular, React, WordPres, JavaScript, Github, Sass, Gulp, Webpack, Chrome Dev Tools, ajax, redux
+                </p>
+              </div>    
+              <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-responsive"></span>
+                <h4 class="skill-card__title">Output</h4>
+                <p class="skill-card__text">
+                  Semantic code, Accessibility, SEO optimisation, responsive images, browser compatibility, lazy loading, responsive, reactive
+                </p>
+              </div>
+              <!-- <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-branding-design"></span>
+                <h4 class="skill-card__title">Technologies</h4>
+                <p class="skill-card__text"><span style="background-color:red"></span>Angular, React, WordPres, JavaScript</p>
+              </div>    
+              <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-responsive"></span>
+                <h4 class="skill-card__title">Concepts</h4>
+                <p class="skill-card__text">
+                  Ajax, CMS, MVC, Firebase, Redux, state management, spa
+                </p>
+              </div>
+              <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-ux-hand"></span>
+                <h4 class="skill-card__title">Workflow</h4>
+                <p class="skill-card__text">Git, Github, Sass, Gulp, Webpack, Chrome Dev Tools</p>
+              </div>
+              <div class="skill-card cell">
+                <span class="skill-card__icon icon icon--300--skills-ux-hand"></span>
+                <h4 class="skill-card__title">Web Standards</h4>
+                <p class="skill-card__text">Semantic code, Accessibility, SEO optimisation, responsive images, browser compatibility, lazy loading, responsive, reactive</p>
+              </div> -->
+            </div><!-- end of skill card group -->
+            <!-- <ul class="accordion" data-accordion data-allow-all-closed="true">
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Tech</a>
+                <div class="accordion-content" data-tab-content>
+                  <ul>
+                    <li>Angular 5</li>
+                    <li>React</li>
+                    <li>WordPress</li>
+                    <li>Greensock AP</li>
+                    <li>Ajax</li>
+                    <li>MongoDB & Mongoose</li>
+                    <li>Firebase</li>
+                    <li>Redux</li>
+                  </ul>      
                 </div>
-                <div class="large-4 medium-4 cell">
-                  <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Tools</a>
+                <div class="accordion-content" data-tab-content>
+                  <ul>
+                    <li>Git with Git Bash</li>
+                    <li>Sass</li>
+                    <li>Gulp</li>
+                    <li>Webpack</li>  
+                    <li>Chrome Dev Tools</li>
+                  </ul>
                 </div>
-                <div class="large-4 medium-4 cell">
-                  <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Software</a>
+                <div class="accordion-content" data-tab-content>
+                  <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Adobe Photoshop & Illustrator</li>
+                    <li>Inkscape</li>
+                    <li>Node</li>
+                    <li>Windows 7</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Languages</a>
+                <div class="accordion-content" data-tab-content>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>PHP</li>
+                    <li>jQuery</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                  </ul>
+                </div>
+              </li>
+          </ul> -->
+          </div><!-- end of wrapper -->
+        </div><!-- end of services section -->
+    
+        <div class="work section" id="work">
+          <div class="wrapper">
+              <div class="heading">
+                <!-- <span class="heading__icon icon icon--alt--section-briefcase"></span> -->
+                <span class="heading__sub heading--uppercase">Portfolio Section</span>
+                <h2 class="heading__main heading__main--extra-margin">Projects built with love</h2>
+                <!-- <h3 class="heading__lead heading__lead--pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia!</h3> -->
+              </div>    
+              <div class="work__project">
+                <div class="cell medium-5">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-calc.png" alt="calc"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+                <div class="cell medium-6 medium-offset-1">
+                  <h4 class="work__project-title">Calculator</h4>
+                  <p>A pure javascript calculator. You can either use the buttons on the calculator or use the keys on your keyboard.</p>
+                  <p>Invalid equations are non-existent or at least restricted as much as possible.</p>
+                  <p>Long equations can be viewed by clicking and dragging the screen. </p>
                 </div>
               </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-4 medium-4 medium-push-2 cell">
-                  <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+              <div class="work__project">
+                <div class="cell medium-6 small-order-2 medium-order-1">
+                  <h4 class="work__project-title">Pomodoro</h4>
+                  <p>A timer based off the Pomodoro technique. You set how many rounds you want to complete and how long you want to work for,  how long your breaks are and how long your extended time-out should be (the break  for the final round).</p>
+                  <p>There are buttons for pausing, skipping sessions, and stopping the timer. At the moment there aren't any audio cues.</p>
+                  <p>The app was built  with the help of p5.js and has a responsive design.</p>
+                  <p>tomato icon by Sai Aditya from the Noun Project. (link in the app)</p>
                 </div>
-                <div class="large-4 medium-4 medium-pull-2 cell">
-                  <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+                <div class="cell medium-5 medium-offset-1 small-order-1 medium-order-2">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-pomo.png" alt="pomo"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
                 </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-5">                  
+                  <a href="#"><img class="work__project-img" src="assets/images/app-quote.png" alt="quote"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+                <div class="cell medium-6 medium-offset-1">
+                  <h4 class="work__project-title">Quote Generator</h4>
+                  <p>A quote generator connected to the Forismatic API and allows you to tweet the quote generated. You can generate a new quote or tweet the quote when you hit the Enter or Spacebar key (when said button is focused).</p>
+                  <p>Design is responsive and implements Greensock animations.</p>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-6 small-order-2 medium-order-1">
+                  <h4 class="work__project-title">Recipe Book App</h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ad, neque corrupti animi, ipsum temporibus aspernatur maxime pariatur optio impedit aliquam laborum itaque quis, velit dolorem cupiditate numquam! Cum, architecto.</p>
+                </div>
+                <div class="cell medium-5 medium-offset-1 small-order-1 medium-order-2">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-recipe-book.png" alt="recipe"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-5">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-tictactoe.png" alt="tictactoe"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+                <div class="cell medium-6 medium-offset-1">
+                  <h4 class="work__project-title">Tic Tac Toe</h4>
+                  <p>Picked up Greensock animations and applied them here to make a flashy tic tac toe game.</p>
+                  <p>You play against the computer whose tactic is sometimes AI and other times pure luck.</p>
+                  <p>The AI is a minimax algorithm. It analyses hypothetical moves and chooses the best move based on the endgame outcome.  I've also implemented some form of depth, limiting the AI's foresight and therefore, creating a more realistic, human game experience.</p>
+                  <p>NOTE:</br>X goes first. Scores are tallied by players (you and the PC, and not X and O)</p>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-6 small-order-2 medium-order-1">
+                  <h4 class="work__project-title">Travel Site</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab eveniet similique tempore suscipit sequi numquam odit, dolor cum et quidem eligendi minima? Aut voluptates corporis porro!</p>
+                </div>
+                <div class="cell medium-5 medium-offset-1 small-order-1 medium-order-2">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-travel-site.png" alt="travel"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-5">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-weather.png" alt="weather"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+                <div class="cell medium-6 medium-offset-1">
+                  <h4 class="work__project-title">Weather App</h4>
+                  <p>A weather app connected to the weather API at Wunderground.</p>
+                  <p>The design is responsive, implements GSAP animations, and has a day and night theme.</p>
+                  <p>To prevent bombarding the user with an overload of information,  I  made a navigation bar that sorted the data into 5 useful categories: temperature, weather, humidity, wind speed and precipitation. I also included a button to toggle between metric and imperial units.</p>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-6 small-order-2 medium-order-1">
+                  <h4 class="work__project-title">Wiki Viewer</h4>
+                  <p>A Wikipedia search engine that connects to the Wikipedia API itself. You can search for your own articles or get a random list of articles.  You can enter search with the Enter key.</p>
+                  <p>The  app gives you preview of the article and clicking on the article takes you to the full article on Wikipedia.</p>
+                  <p>When present, the sidebar lists the results of your search and allows you to quickly navigate to the article preview.</p>
+                  <p>Design is responsive and implements Greensock animations.</p>
+                </div>
+                <div class="cell medium-5 medium-offset-1 small-order-1 medium-order-2">                  
+                  <a href="#"><img class="work__project-img" src="assets/images/app-wiki.png" alt="wiki"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="work__project">
+                <div class="cell medium-5">
+                  <a href="#"><img class="work__project-img" src="assets/images/app-uni-site3.png" alt="wordpress"></a>
+                  <ul class="tags">
+                    <li class="secondary label">jQuery</li>
+                    <li class="secondary label">Responsive</li>
+                    <li class="secondary label">Ajax</li>
+                  </ul>
+                </div>
+                <div class="cell medium-6 medium-offset-1">
+                  <h4 class="work__project-title">University Website</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam sint magnam eveniet fuga blanditiis harum expedita officia animi provident nam aperiam obcaecati nulla, soluta dolorum rem doloribus. Ipsam corrupti ullam magni nam laborum. Atque, at repellat facilis dignissimos, eaque aut ipsam quo tempore earum, tenetur enim eos ipsum consectetur.</p>
+                </div>
+              </div>
+          </div><!-- end of wrapper -->
+        </div><!-- end of work section -->
+    
+        <div class="about section" id="about">
+          <div class="wrapper">
+            <!-- <img class="about__pic" src="assets/images/profile.png" alt="that's me!"> -->
+            <img class="about__pic" src="assets/images/profilepic.jpg" alt="that's me!">
+            <div class="heading">
+              <!-- <span class="heading__icon icon icon--alt--section-user3"></span> -->
+              <span class="heading__sub heading--uppercase">About Section</span>
+              <h2 class="heading__main">Your everyday geeky gal</h2>
+              <h3 class="heading__lead">Ambitious, persistent, self-taught</h3>
+            </div>            
+            <p class="about__text">
+              Hiya, I'm an aspiring full stack developer, <span style="color:red">w</span>ith extensive knowledge of HTM<span style="color:red">L</span>, CSS and JS, and working knowledge of Angular, hoping to join a fast-growing and innovative company as a passionate junior developer and grow my portfolio. 
+            </p>
+            <div class="justified grid-x align-justify">
+              <div>
+                <span class="icon icon--500--other-location icon--alt--ib"></span> Chesterfield, Derbyshire
+              </div>
+              <div class="social-media">
+                <a class="social-media__button" href="https://www.twitter.com/artisanclick"><i class="fa fa-twitter"></i></a>
+                <a class="social-media__button" href="https://www.instagram.com/artisanclick"><i class="fa fa-instagram"></i></a>
+                <a class="social-media__button" href="https://open.spotify.com/user/jg78z1akyh5ulo6cu2ss4lv6v?si=inyh5SIwR2amlWO7uXFQBg"><i class="fa fa-spotify"></i></a>
+                <a class="social-media__button" href="https://www.last.fm/user/artisanclick"><i class="fa fa-lastfm"></i></a>
               </div>
             </div>
-          </div>
-        </div>
-  
-        <div class="grid-x grid-padding-x">
-          <div class="large-8 medium-8 cell">
-            <h5>Here&rsquo;s your basic grid:</h5>
-  
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <div class="primary callout">
-                  <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <div class="primary callout">
-                  <p>Six cell</p>
-                </div>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <div class="primary callout">
-                  <p>Six cell</p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 small-4 cell">
-                <div class="primary callout">
-                  <p>Four cell</p>
-                </div>
-              </div>
-              <div class="large-4 medium-4 small-4 cell">
-                <div class="primary callout">
-                  <p>Four cell</p>
-                </div>
-              </div>
-              <div class="large-4 medium-4 small-4 cell">
-                <div class="primary callout">
-                  <p>Four cell</p>
-                </div>
-              </div>
-            </div>
-  
-            <hr />
-  
-            <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-            <form>
-              <div class="grid-x grid-padding-x">
-                <div class="large-12 cell">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-12.cell" />
-                </div>
-              </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-4 medium-4 cell">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-4.cell" />
-                </div>
-                <div class="large-4 medium-4 cell">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-4.cell" />
-                </div>
-                <div class="large-4 medium-4 cell">
-                  <div class="grid-x">
-                    <label>Input Label</label>
-                    <div class="input-group">
-                      <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                      <span class="input-group-label">.com</span>
+            <!-- <div class="grid-x grid-margin-x grid-margin-y medium-up-2">              
+              <ul class="cell accordion" data-accordion data-allow-all-closed="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Tech</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ul>
+                        <li>Angular 5</li>
+                        <li>React</li>
+                        <li>WordPress</li>
+                        <li>Greensock AP</li>
+                        <li>Ajax</li>
+                        <li>MongoDB & Mongoose</li>
+                        <li>Firebase</li>
+                        <li>Redux</li>
+                      </ul>      
                     </div>
-                  </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Tools</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ul>
+                        <li>Git with Git Bash</li>
+                        <li>Sass</li>
+                        <li>Gulp</li>
+                        <li>Webpack</li>  
+                        <li>Chrome Dev Tools</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Software</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Adobe Photoshop & Illustrator</li>
+                        <li>Inkscape</li>
+                        <li>Node</li>
+                        <li>Windows 7</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Languages</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>PHP</li>
+                        <li>jQuery</li>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                      </ul>
+                    </div>
+                  </li>
+              </ul>
+            </div> -->
+            <!-- <div class="grid-x grid-margin-x grid-margin-y medium-up-2">
+              <div class="cell card">
+                <div class="card-divider">
+                  <h4>Tech</h4>
+                </div>
+                <div class="card-section">
+                  <ul>
+                    <li>Angular 5</li>
+                    <li>React</li>
+                    <li>WordPress</li>
+                    <li>Greensock AP</li>
+                    <li>Ajax</li>
+                    <li>MongoDB & Mongoose</li>
+                    <li>Firebase</li>
+                    <li>Redux</li>
+                  </ul>
                 </div>
               </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-12 cell">
-                  <label>Select Box</label>
-                  <select>
-                    <option value="husker">Husker</option>
-                    <option value="starbuck">Starbuck</option>
-                    <option value="hotdog">Hot Dog</option>
-                    <option value="apollo">Apollo</option>
-                  </select>
+              <div class="cell card">
+                <div class="card-divider">
+                  <h4>Workflow</h4>
+                </div>
+                <div class="card-section">
+                  <ul>
+                    <li>Git with Git Bash</li>
+                    <li>Sass</li>
+                    <li>Gulp</li>
+                    <li>Webpack</li>  
+                    <li>Chrome Dev Tools</li>
+                  </ul>
                 </div>
               </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-6 medium-6 cell">
-                  <label>Choose Your Favorite</label>
-                  <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+              <div class="cell card">
+                <div class="card-divider">
+                  <h4>Tools</h4>
                 </div>
-                <div class="large-6 medium-6 cell">
-                  <label>Check these out</label>
-                  <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                  <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                <div class="card-section">
+                  <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Adobe Photoshop & Illustrator</li>
+                    <li>Inkscape</li>
+                    <li>Node</li>
+                    <li>Windows 7</li>
+                  </ul>
                 </div>
               </div>
-              <div class="grid-x grid-padding-x">
-                <div class="large-12 cell">
-                  <label>Textarea Label</label>
-                  <textarea placeholder="small-12.cell"></textarea>
+              <div class="cell card">
+                <div class="card-divider">
+                  <h4>Languages</h4>
+                </div>
+                <div class="card-section">
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>PHP</li>
+                    <li>jQuery</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+          </div><!-- end of wrapper -->
+        </div><!-- end of about section -->
+    
+        <div class="contact section section--extra-b-padding" id="contact">
+          <div class="wrapper">
+            <div class="heading">
+              <!-- <span class="heading__icon icon icon--section-telephone"></span> -->
+              <span class="heading__sub heading--uppercase">Contact Section</span>
+              <h2 class="heading__main heading__main--light">Like what you see, get in touch!</h2>
+              <h3 class="heading__lead heading__lead--dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia!</h3>
+            </div>    
+            <form action="">
+              <input type="text" name="name" id="name" placeholder="First and last name">
+              <input type="email" name="email" id="email" placeholder="Your Email">
+              <textarea placeholder="Your message"></textarea>
+              <div class="grid-x align-justify">
+                <button type="submit" class="large button medium-down-expanded">Send Message</button>
+                <div class="social-media">
+                  <a href="mailto:artisanclickinfo@gamil.com"><span class="fa fa-envelope"></span></a>
+                  <a href="https://www.twitter.com/artisanclick"><span class="fa fa-twitter"></span></a>
+                  <a href="https://www.codepen.io/artisanclick"><span class="fa fa-codepen"></span></a>
+                  <!-- <a href="https://www.freecodecamp.com"><span class="fa fa-free-code-camp"></span></a> -->
+                  <a href="https://github.com/artisanclick"><span class="fa fa-github-alt"></span></a>
                 </div>
               </div>
             </form>
-          </div>
-  
-          <div class="large-4 medium-4 cell">
-            <h5>Try one of these buttons:</h5>
-            <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-            <div class="callout">
-              <h5>So many components, girl!</h5>
-              <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-              <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-            </div>
+          </div><!-- end of wrapper -->
+        </div><!-- end of contact section -->
+    
+        <div class="footer section section--footer" id="footer">
+          <div class="wrapper">
+            Made with <i class="fa fa-heart"></i> by Ysanne Carr
           </div>
         </div>
-      </div>        -->
-    <!-- build:js assets/scripts/app.js -->
-    <script src="temp/js/app.js"></script>
+      
+      </div>
+    </div>
+
+
+    <!-- build:js assets/scripts/main.js -->
+    <script src="temp/js/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>

@@ -1,0 +1,75 @@
+doctype html
+html.no-js(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        title Code Ysanne
+        meta(name="keywords" content="Front end developer, frontend developer, Angular developer, WordPress developer, web developer")
+        meta(name="description" content="Front End Developer")
+
+        // build:css assets/styles/app.css
+        link(rel="stylesheet" href="../src/temp/css/app.css")
+        // endbuild
+        link(rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+        // build:js assets/scripts/vendor.js
+        script(src="../src/temp/js/vendor.js")
+        // endbuild
+    body
+        .off-canvas-wrapper
+            .off-canvas.position-left(id="offCanvas" data-off-canvas data-auto-focus="false")
+                //- button.close-button(aria-label="Close menu" type="button" data-close) #[span(aria-hidden="true") &times;]
+                //- .off-canvas__inner.grid-y.grid-frame
+                //- .off-canvas__inner
+                //- .cell.small-6
+                .logo.logo--small #[span.large.accented Code] Ysanne
+                //- .cell.small-6
+                ul.vertical.menu(data-smooth-scroll)
+                    //- #skills-link
+                    li
+                        a.menu-item#skills-link-offcanvas(href="#skills") #[span.icon.icon--900--section-tools] Skills
+                    //- #work-link
+                    li
+                        a.menu-item#work-link-offcanvas(href="#work") #[span.icon.icon--900--section-briefcase] Portfolio
+                    //- #about-link
+                    li
+                        a.menu-item#about-link-offcanvas(href="#about") #[span.icon.icon--900--section-user3] About
+                    //- #contact-link
+                    li
+                        a.menu-item#contact-link-offcanvas(href="#contact") #[span.icon.icon--900--section-telephone] Contact
+            .off-canvas-content(data-off-canvas-content)
+                header.header(data-sticky-container)
+                    .sticky(data-sticky data-margin-top="0" data-sticky-on="small")
+                        .title-bar(data-responsive-toggle="main-menu" data-hide-for="medium")
+                            button.fa.fa-bars(data-open="offCanvas")
+                        .wrapper.wrapper--no-x-padding
+                            .top-bar(id="main-menu")
+                                ul.show-for-medium.horizontal.menu(data-smooth-scroll data-offset="80")
+                                    li.show-for-medium
+                                        a.menu-text(href="#hero") Code Ysanne
+                                    li
+                                        a.menu-item#skills-link(href="#skills") Skills
+                                    li
+                                        a.menu-item#work-link(href="#work") Portfolio
+                                    li
+                                        a.menu-item#about-link(href="#about") About
+                                    li
+                                        a.menu-item#contact-link(href="#contact") Contact
+                .hero#hero
+                    .wrapper.wrapper--fill-height.wrapper---no-overflow
+                        .hero__text-content
+                            h1.logo #[span.large.accented Code] Ysanne
+                            h2.hero__subtitle I develop stylish responsive sites and apps
+                            a.button(href="#contact") Get in touch
+                
+                block content
+
+                .footer.section.section--footer#footer
+                    .wrapper Made with #[i.fa.fa-heart] by Ysanne Carr
+        // build:js assets/scripts/main.js
+        script(src="../src/temp/js/main.js")
+        // endbuild
+

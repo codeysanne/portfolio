@@ -1,0 +1,15 @@
+.accordion {
+    .is-active {
+        .accordion-title {
+            color:$white;
+        }
+    }
+    &-title {
+        text-transform: uppercase;
+        font-weight:700;
+        letter-spacing: 1px;
+        &:hover {
+            color:$white;
+        }
+    }
+}

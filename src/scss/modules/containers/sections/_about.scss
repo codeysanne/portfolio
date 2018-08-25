@@ -1,0 +1,73 @@
+.about {
+    // background-color: $orchid4;
+    background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.06), rgba(0,0,0,0) 52px),
+    //     linear-gradient(to top, rgba(0,0,0,0.12), rgba(0,0,0,0) 52px),
+    //     linear-gradient(to bottom, $orchid4, $gem1)
+    ;
+    &__pic {
+        @include duotone('duotone_purplesb');
+        height: 80px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7.5vh;
+        // @include overlay(to bottom, $orchid2, $gem2, multiply);
+        &:after {
+            // z-index: 2;
+        }
+        // @include duotone('duotone_purple_yellow');
+        // height: 150px;
+        // height: 60%;
+        // margin: 150px;
+        // text-align: right;
+        // @include duotone('greyscale_duotone');
+    }
+    &__text {
+        // color: rgba(255,255,255,0.65);
+        // font-family: 'Raleway', sans-serif;
+        // font-style: italic;
+        @include breakpoint(medium) {
+            font-weight: 300;
+            // font-size: 1.2em;
+        }
+        margin-bottom: 7.5vh;
+    }
+    .icon {
+        &--alt--ib {
+            display: inline-block;
+            margin-right: 1em;
+        }
+    }
+    .fa {
+        // font-size: 3em;
+    }
+    .divide {
+        // clear: both;
+    }
+    .justified {
+        margin-bottom: 7.5vh;
+        font-size: 1.5rem;
+    }
+    .social-media {
+        font-size: 1.2em;
+        // float: right;
+        // clear: both;
+        @include breakpoint(medium) {
+            text-align: right;
+        }
+        &__button {
+            font-size: 36px;
+            @include breakpoint(medium) {
+                font-size: inherit;
+            }
+            &:not(:first-child) {
+                margin-left: 0.5em;
+                @include breakpoint(medium) {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}

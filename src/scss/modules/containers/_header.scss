@@ -1,0 +1,183 @@
+.header {
+    &.sticky-container {
+        z-index: 20;
+        position: absolute;
+        width: 100%;
+        top: 0; 
+    }
+    // @include breakpoint(medium) {
+        .sticky {
+            background: $headerColor;
+            .menu-item, .fa-bars {
+                color:rgba(255,255,255,0.79);
+            }
+        }
+        &--dark {
+            .sticky {
+                background: $darkHeaderColor;
+                .menu-item, .fa-bars {
+                    color:$light-black;
+                }
+            }
+            &er {
+                .sticky {
+                    // background: $darkHeaderColor;
+                    background: $contactColor;
+                }                
+            }
+        }
+    // }
+    .sticky {
+        // @include breakpoint(medium) {
+        //     background: $headerColor;
+        // }
+        // background: linear-gradient(to bottom, $headerColor 60%, transparent);
+        // box-shadow: 0 0 20px $headerColor;
+        transition: 
+            background-color 500ms ease-out
+            // padding-top 2s ease-out,
+            // padding-bottom 2s ease-out
+            ;
+        @include breakpoint(medium down) {
+            // background: rgba(0,0,0,0.3)!important;
+        }    
+    }
+    .top-bar {
+        background-color: transparent;
+        padding: 1rem 0.5rem;
+        // padding: rem-calc(40.8125) 0.5rem;
+        // font-size: 0.875em;
+        font-size: 0.8182em;
+        padding-left: 15px;
+        ul {
+            background-color: transparent;
+        }
+        @include breakpoint(medium only) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    } 
+    .title-bar {
+        // background-color: rgba(0,0,0,0.5);
+        background-color: transparent;
+        // padding-top: 1rem;
+        // padding-bottom: 1rem;
+        // padding-left: 20px;
+        // padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        &-title {
+            padding-left: 20px;
+            font-family: $headerFont;
+        }
+        button {
+            // padding: 1rem;
+        }
+    }
+    .menu-wrapper, .fa-bars {
+        // border-radius: 50%;
+        // background-color: $secondary;
+        // color: $white;
+        // padding-left: 20px;
+        // padding-top: 10px;
+        // padding: 10px 20px;
+        // margin-top: 10px;
+        // margin-left: 20px;
+        cursor: pointer;
+    }
+    .menu-icon {
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent;
+        // padding: 1rem;
+    }
+    .fa-bars {
+        font-size: 1.5rem;
+        // padding-left: 20px;
+        padding: 10px 15px;
+        color: inherit;
+        // color
+        // background: inherit;
+        // border: none;
+    }
+    .menu-item {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        // color:$white4;
+        // color:$medium-gray;
+    }
+    .menu-text {
+        // font-family: 'Corben', serif!important;
+        color: $secondary;
+        padding-left: 0;
+    }
+    .menu-icon-wrapper {
+        // height: 40px;
+        // width: 40px;
+        // border-radius: 50%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+    .is-current-link {
+        // color: $black!important;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            bottom: 0;
+            // transform: translateX(-50%);
+            // transform-origin: top left;
+            // width: calc(100% - (2 * 1rem));
+            height: 3px;
+            width: 1px;
+            background-color: red;
+            animation: 300ms forwards 1 ease-out fillAnim;
+            // border-bottom: 1px solid $secondary;
+            // border-width: 80%;
+        }
+    }
+    &--dark {
+        .sticky {
+            // background: $darkHeaderColor;
+            // background: linear-gradient(to bottom, $darkHeaderColor 60%, transparent);
+            // box-shadow: 0 0 6px $darkHeaderColor;
+        }
+        .top-bar {
+            // padding: 0.5rem 0.5rem;
+        }
+        .menu-icon-wrapper {
+            background-color: $primary2;
+        }
+        .menu-item {
+            // color:$dark-gray;
+        }
+        .is-current-link {
+            // color: $black!important;
+            color: $black!important;
+            &:after {
+                background-color: $primary;
+            }
+        }    
+    }
+    &--darker {
+        .sticky {
+            // background: $contactColor;
+            // background: linear-gradient(to bottom, $darkHeaderColor 60%, transparent);
+            // box-shadow: 0 0 6px $darkHeaderColor;
+        }
+        .is-current-link {
+            color: rgba(255,255,255,0.95)!important;
+            &:after {
+                background-color: $secondary;
+            }
+        }    
+    }
+    @keyframes fillAnim {
+        100% {
+            width: calc(100% - (2 * 1rem));
+        }
+    }
+}

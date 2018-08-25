@@ -1,0 +1,107 @@
+.contact {
+    background-color: $contactColor;
+    // background-color: $primary;
+    background-image: 
+        linear-gradient(to top, rgba(255,255,255,0.06), rgba(0,0,0,0) 52px),
+        url('../../../../src/assets/icons/300/section-telephone.svg')
+    ;
+    background-repeat: no-repeat;
+    background-size: 33vw;
+    background-position: right 20px bottom -30px;
+    // background-blend-mode: overlay;
+    position: relative;
+    overflow-x: hidden;
+    &:after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-left: 100vw solid $bgColor;
+        border-bottom: 50px solid transparent;    
+        @include breakpoint(medium) {
+            border-left: 100vw solid $bgColor;
+            border-bottom: 70px solid transparent;    
+        }
+    }
+    .social-icons {
+        // text-align: center;
+        @extend .grid-x;
+        @extend .grid-margin-x;
+        @extend .grid-margin-y;
+
+        &__icon {
+            @extend .cell;
+            @extend .small-6;
+            @extend .medium-4;
+            font-size: 3rem;
+            text-align: center;
+            border: 3px solid $primary4;
+            border-radius: 8px;
+            color: $primary4;
+        }
+    }
+    .heading {
+        color: #fff;
+    }
+    label {
+        font-size: 1.2rem;
+        color:$primary1;
+        // text-transform: uppercase;
+        font-weight: 400;
+    }
+    input {
+        // background-color: $primary;
+        @include breakpoint(medium) {
+            font-size: 1em;
+        }
+    }
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        @include breakpoint(medium) {
+            justify-content: flex-end;
+            text-align: right;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+        &__button {
+            // display: flex;
+            // align-items: center;
+            // display: inline-block;
+            color: $primary2;
+            font-size: 36px;
+            // font-size: inherit;
+            @include breakpoint(medium){
+                font-size: 1.25rem;
+                // padding-top: 0.85em;
+                // padding-bottom: 0.85em;
+            }
+            &:not(:first-child) {
+                margin-left: 0.5em;
+                @include breakpoint(medium){
+                    margin-left: 1.5em;
+                }
+            }
+        }
+    }
+    .button {
+        // width: 100%;
+        @include breakpoint(small only) {
+            // @extend .large;
+        }
+        // @include breakpoint(medium) {
+        //     width: auto;
+        // }
+    }
+    
+    textarea {
+        height: 140px;
+        @include breakpoint(medium) {
+            font-size: 1em;
+            height: 200px;
+        }
+    }
+}

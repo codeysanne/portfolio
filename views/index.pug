@@ -1,0 +1,259 @@
+extends layout
+
+
+block content
+    //- .wrapper.wrapper--fill-height.wrapper---no-overflow #{testVar}
+    //- block services
+    //- //- block work
+    //- block about
+    //- block contact
+    .services.section#skills(data-matching-link="#skills-link")
+        .wrapper
+            .heading
+                span.heading__sub.heading--uppercase Skills Section
+                h2.heading__main Developing and designing know-how
+            .skill-card-group.grid-x.grid-margin-x.grid-margin-y.grid-padding-x.grid-padding-y.medium-up-2
+                .skill-card.cell
+                    .skill-card__bar
+                        h4.skill-card__title Input
+                        .skill-card__icon
+                            span.icon.icon--300--skills-branding-design
+                    p.skill-card__text Angular, React, WordPres, JavaScript, Github#[span.mark ,] Sass, Gulp, Webpack, Chrome #[span.mark D]ev Tools, ajax, redux, Visual Studio Code, Windows, Node
+                .skill-card.cell
+                    .skill-card__bar
+                        h4.skill-card__title Output
+                        .skill-card__icon
+                            span.icon.icon--300--skills-responsive
+                    p.skill-card__text Semantic code, Accessibility, SEO optimisation, responsive images, browser compatibility, lazy loading, responsive, reactive
+    .work.section#work(data-matching-link="#work-link")
+        .wrapper
+            .heading
+                span.heading__sub.heading--uppercase Portfolio Section
+                //- h2.heading__main.heading__main--extra-margin Projects built with love
+                h2.heading__main Projects built with love
+            .grid-x.grid-margin-x.align-top
+                .cell.medium-6.large-12.grid-x.work__project.work__project--odd
+                    //- .cell.large-5
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#") 
+                            img.work__project-img(src="../src/assets/images/app-calc.png" alt="calc")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.large-offset-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Calculator
+                        .work__project-text
+                            p A pure javascript calculator. You can either#[span.mark  ]use the buttons on the calcul#[span.mark a]tor or use the keys on your keyboard.
+                            p Invalid equations are non-existent or at least restricted as much as possible.
+                            p Long equations can be viewed by clicking and dragging the screen.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax 
+                .cell.medium-6.large-12.grid-x.work__project.work__project--even
+                    //- .cell.large-5.large-offset-1.small-order-1.large-order-2
+                    .cell.medium-12.work__project-img-cell                    
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-pomo.png" alt="pomo")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.small-order-2.large-order-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Pomodoro
+                        .work__project-text
+                            p A timer based off the Pomodoro technique. Yo#[span.mark u] set how many rounds you want#[span.mark  ]to complete and how long you want to work for,  how long your breaks are and how long your extended time-out should be (the break  for the final round).
+                            p There are buttons for pausing, skipping sessions, and stopping the timer. At the moment there aren't any audio cues.
+                            p The app was built  with the help of p5.js and has a responsive design.
+                            p tomato icon by Sai Aditya from the Noun Project. (link in the app)
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--odd
+                    //- .cell.large-5     
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-quote.png" alt="quote")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.large-offset-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Quote Generator
+                        .work__project-text
+                            p A quote generator connected to the Forismati#[span.mark c] API and allows you to tweet #[span.mark t]he quote generated. You can generate a new quote or tweet the quote when you hit the Enter or Spacebar key (when said button is focused).
+                            p Design is responsive and implements Greensock animations.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--even
+                    //- .cell.large-6.small-order-2.large-order-1
+                    //- div
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-recipe-book.png" alt="recipe")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-5.large-offset-1.small-order-1.large-order-2
+                    //- div
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Recipe Book App
+                        .work__project-text
+                            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ad, neque corrupti animi, ipsum temporibus aspernatur maxime pariatur optio impedit aliquam laborum itaque quis, velit dolorem cupiditate numquam! Cum, architecto.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--odd
+                    //- .cell.large-5
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-tictactoe.png" alt="tictactoe")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.large-offset-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Tic Tac Toe
+                        .work__project-text
+                            p Picked up Greensock animations and applied t#[span.mark h]em here to make a flashy tic #[span.mark t]ac toe game.
+                            p You play against the computer whose tactic is sometimes AI and other times pure luck.
+                            p The AI is a minimax algorithm. It analyses hypothetical moves and chooses the best move based on the endgame outcome.  I've also implemented some form of depth, limiting the AI's foresight and therefore, creating a more realistic, human game experience.
+                            p NOTE:#[br]X goes first. Scores are tallied by players (you and the PC, and not X and O)
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--even
+                    //- .cell.large-6.small-order-2.large-order-1
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-travel-site.png" alt="travel")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-5.large-offset-1.small-order-1.large-order-2
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Travel Site
+                        .work__project-text
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab eveniet similique tempore suscipit sequi numquam odit, dolor cum et quidem eligendi minima? Aut voluptates corporis porro!
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--odd
+                    //- .cell.large-5
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-weather.png" alt="weather")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.large-offset-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Weather App
+                        .work__project-text
+                            p A weather app connected to the weather API a#[span.mark t] Wunderground.
+                            p The design is responsive, implements GSAP animations, and has a day and night theme.
+                            p To prevent bombarding the user with an overload of information,  I  made a navigation bar that sorted the data into 5 useful categories: temperature, weather, humidity, wind speed and precipitation. I also included a button to toggle between metric and imperial units.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--even
+                    //- .cell.large-6.small-order-2.large-order-1
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-wiki.png" alt="wiki")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-5.large-offset-1.small-order-1.large-order-2
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title Wiki Viewer
+                        .work__project-text
+                            p A Wikipedia search engine that connects to t#[span.mark h]e Wikipedia API itself. You c#[span.mark a]n search for your own articles or get a random list of articles.  You can enter search with the Enter key.
+                            p The  app gives you preview of the article and clicking on the article takes you to the full article on Wikipedia.
+                            p When present, the sidebar lists the results of your search and allows you to quickly navigate to the article preview.
+                            p Design is responsive and implements Greensock animations.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                .cell.medium-6.large-12.grid-x.work__project.work__project--odd
+                    //- .cell.large-5
+                    .cell.medium-12.work__project-img-cell
+                        a(href="#")
+                            img.work__project-img(src="../src/assets/images/app-uni-site3.png" alt="wordpress")
+                        ul.tags.show-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+                    //- .cell.large-6.large-offset-1
+                    .cell.medium-12.work__project-text-cell
+                        h4.work__project-title University Website
+                        .work__project-text
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam sint magnam eveniet fuga blanditiis harum expedita officia animi provident nam aperiam obcaecati nulla, soluta dolorum rem doloribus. Ipsam corrupti ullam magni nam laborum. Atque, at repellat facilis dignissimos, eaque aut ipsam quo tempore earum, tenetur enim eos ipsum consectetur.
+                        ul.tags.hide-for-large
+                            li.secondary.label jQuery
+                            li.secondary.label Responsive
+                            li.secondary.label Ajax
+    .about.section#about(data-matching-link="#about-link")
+        .wrapper
+            img.about__pic(src="../src/assets/images/profilepic.jpg" alt="that's me!")
+            .heading
+                span.heading__sub.heading--uppercase About Section
+                h2.heading__main Your everyday geeky gal
+                //- h3.heading__lead Ambitious, persistent, self-taught
+            p.about__text.full-width-text Hiya, I'm an aspiring full stack developer, #[span.mark w]ith extensive knowledge of HT#[span.mark M]L, CSS and JS, and working knowledge of Angular, hoping to join a fast-growing and innovative company as a passionate junior developer and grow my portfolio. 
+            .justified.grid-x
+                .cell.medium-6 #[span.icon.icon--500--other-location.icon--alt--ib] Chesterfield, Derbyshire
+                .cell.medium-6.social-media 
+                    a.social-media__button(href="https://www.twitter.com/artisanclick") 
+                        i.fa.fa-twitter
+                    a.social-media__button(href="https://www.instagram.com/artisanclick") 
+                        i.fa.fa-instagram
+                    a.social-media__button(href="https://open.spotify.com/user/jg78z1akyh5ulo6cu2ss4lv6v?si=inyh5SIwR2amlWO7uXFQBg") 
+                        i.fa.fa-spotify
+                    a.social-media__button(href="https://www.last.fm/user/artisanclick") 
+                        i.fa.fa-lastfm
+    .contact.section.section--extra-b-padding#contact(data-matching-link="#contact-link")
+        .wrapper
+            .heading
+                span.heading__sub.heading--uppercase Contact Section
+                h2.heading__main.heading__main--light.heading__main--extra-margin Like what you see, get in touch!
+                //- h3.heading__lead.heading__lead--light Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia!
+            //- form(action="POST")
+            form.grid-x.grid-margin-x(method="POST" action="/send")
+                label.cell.small-6 Name
+                    input(type="text" name="name" id="name" placeholder="Your Name")
+                label.cell.small-6 Phone
+                    input(type="text" name="number" id="number" placeholder="Your Phone Nmber")
+                label.cell Email
+                    input(type="email" name="email" id="email" placeholder="Your Email")
+                label.cell Message
+                    textarea(placeholder="Your message")
+                .cell.grid-x
+                    .cell.medium-6
+                        button.button(type="submit") Send Message
+                    .cell.medium-6.social-media
+                        a.social-media__button(href="mailto:artisanclickinfo@gamil.com") 
+                            i.fa.fa-envelope
+                        a.social-media__button(href="https://www.twitter.com/artisanclick") 
+                            i.fa.fa-twitter
+                        a.social-media__button(href="https://www.codepen.io/artisanclick") 
+                            i.fa.fa-codepen
+                        a.social-media__button(href="https://github.com/artisanclick") 
+                            i.fa.fa-github-alt

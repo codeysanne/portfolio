@@ -1,0 +1,73 @@
+@mixin duotone($svgFileNameSvgRef) {
+    filter: url('../../etc/duotone.svg#'+$svgFileNameSvgRef);
+}
+
+// @mixin overlay($direction, $color1, $color2, $color3, $opacity, $zindex) {
+// @mixin overlay($direction, $color1, $color2, $opacity, $zindex) {
+// @mixin overlay($direction, $color1, $color2, $zindex) {
+@mixin overlay($direction, $color1, $color2, $blendmode) {
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        // height: 100%;
+        // width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient($direction, $color1, $color2);
+        // opacity: $opacity;
+        // z-index: $zindex;
+        mix-blend-mode: $blendmode;
+        // z-index: 20;
+        // opacity: 0.5;
+    }
+}
+
+@mixin bg-txt(
+        $txt, 
+        $font-color, 
+        $font-size, 
+        $font-family, 
+        $font-weight, 
+        $line-height, 
+        $blend-mode, 
+        $z-index) {
+    content: $txt;
+    // height: calc(100% - var(--padding-top));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparentize($orchid1, 0);
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    mix-blend-mode: $blendmode;
+    z-index: $z-index;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+@mixin anglededge($color) {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // top: 0;
+    // right: 0;
+    // // bottom: 0;
+    // // right: 0;
+    // width: 100%;
+    // height: 100%;
+    border-right: 100vw solid $color;
+    border-top: 70px solid transparent;
+}
+
+// foundation's breakpoint mixin
+// @include breakpoint(medium down) { }

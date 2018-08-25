@@ -1,0 +1,83 @@
+.services {
+    // background-color: #ebebeb;
+    // background-color: #f2f2f2;
+    // background-image: 
+    //     linear-gradient(rgba(0,0,0,0.06), rgba(0,0,0,0) 52px), 
+    //     // linear-gradient(to top, rgba(0,0,0,0.06), rgba(0,0,0,0) 52px);
+    //     linear-gradient(to top, rgba(0,0,0,0.06), rgba(0,0,0,0) 52px), 
+    //     url('../../../../assets/images/texture2.jpg');
+    //     // background-blend-mode: normal,normal, screen;
+    //     // background-blend-mode: normal, normal, hard-light;
+    // // background-size: auto, auto, auto;
+    // background-repeat: no-repeat, no-repeat, repeat;
+    // // background-image: linear-gradient(rgba(0,0,0,0.06), rgba(0,0,0,0) 52px), linear-gradient(to top, rgba(0,0,0,0.06), rgba(0,0,0,0) 52px);
+    // // background-blend-mode: normal, normal;
+    // background-blend-mode: normal, normal, hard-light;
+    // // background-size: auto, auto;
+    // // background-repeat: no-repeat, no-repeat;
+    z-index: -1;
+    p {
+        // color:darken($dark-gray, 10%);
+    }
+    .skill-card {
+        background-color: rgba(255,255,255,0.4);
+        // background-color: #efefef;
+        &-group {
+            // margin-bottom: 50px;
+        }
+        &__bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        &__icon {
+            // margin: auto;
+            // font-size: 5rem;
+            // transform: scale(3);
+            // transform-origin: top left;
+            // background-color: rgba(0,0,0,0.1);
+            // opacity: 0.6;
+            // visibility: hidden;
+            // display: none;
+            // background-color: $bgColor;
+            // padding: 1rem;
+            display: inline-block;
+            // margin-right: 1rem;
+            // text-align: center;
+            margin-left: auto;
+        }
+        &__title {
+            display: inline-block;
+            // font-size: 1.25rem;
+            // color: $orchid4;
+            font-family: $bodyFont, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            // letter-spacing: 2px;
+            // font-size: 0.95em;
+            color:darken($dark-gray, 25%);
+        }
+        &__text {
+            // font-size: 0.8em;
+            color:darken($medium-gray, 25%);
+        }
+    }
+    .color {
+        &1 {
+            background-color: $primary1;
+        }
+        &2 {
+            background-color: $primary2;
+        }
+        &3 {
+            background-color: $primary;
+        }
+        &4 {
+            background-color: $primary3;
+        }
+        &5 {
+            background-color: $primary4;
+        }
+    }
+}

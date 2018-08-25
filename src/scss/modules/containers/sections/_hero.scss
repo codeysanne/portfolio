@@ -1,0 +1,63 @@
+.hero {
+    --padding-top--small: 48px;
+    --padding-top--large: calc(2 * 1rem + 2 * 0.7rem + 0.8182rem);
+    --height: 650px;
+
+    padding-top: var(--padding-top--small);
+    min-height: 500px;
+    height: 60vh;
+    @include breakpoint(medium) {
+        padding-top: var(--padding-top--large);
+        min-height: var(--height);
+        height: 70vh;
+    }
+    background-color: $headerColor;
+    overflow-x: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // @include duotone('duotone_purples');
+        background-image: url('https://source.unsplash.com/random');
+        background-image: url('../../../../src/assets/images/architecture7.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-right: 100vw solid $bgColor;
+        border-top: 50px solid transparent;
+        @include breakpoint(medium) {
+            border-right: 100vw solid $bgColor;
+            border-top: 70px solid transparent;
+        }
+    }
+    position: relative;
+    &__text-content {
+        z-index: 10;
+    }
+
+    &__subtitle {
+        font-style: italic;
+        font-weight: 400;
+        font-family: $bodyFont;
+        line-height: 1.25em;
+        margin-bottom: 0.75em;
+        color: $primary1;
+    }
+
+    &__description {
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .button {
+        @extend .large;
+        z-index: 30;
+    }
+}

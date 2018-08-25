@@ -3,7 +3,7 @@ var path = require('path'); /* require method is provided by Node */
 /* the starting point file for javascript. the final file, the one compiled/bundled by webpack, injects js files in the correct order according to their dependencies/imports */
 module.exports = {
     entry: {
-        app: './src/js/app.js',
+        main: './src/js/main.js',
         vendor: './src/js/vendor.js'
     },
     output: {
